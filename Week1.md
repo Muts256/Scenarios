@@ -145,3 +145,8 @@ Actions:
 
 #### 10. Aftermath
 - Lessons Learned. Document what was done. Fill in the gaps, if any, for a better response in the future.
+
+#### MITRE ATT&CK Mapping
+- T1219 – Remote Access Software
+- T1059 – Command and Scripting Interpreter
+- T1105 – Ingress Tool Transfer
