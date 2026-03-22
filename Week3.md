@@ -31,6 +31,7 @@ The alert “Internal Port Scan Detected” was triggered after netscan.exe exec
 ####  Objective
 Determine whether the execution of `netscan.exe` targeting `192.168.1.0/24` by the `administrator` account is an authorised activity or adversary reconnaissance.
 
+---
 
 #### 1.  Validate Business Justification
 - Check:
