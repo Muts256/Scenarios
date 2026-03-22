@@ -22,3 +22,4 @@ Each scenario is documented as its own file or folder, covering:
 - Root cause (where identified)
 - Resolution steps taken
 - Preventative measures or follow-up actions
+- MITRE ATT&CK Mapping
