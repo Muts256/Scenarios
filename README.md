@@ -19,6 +19,7 @@ Each scenario is documented as its own file or folder, covering:
 
 - The alert that fired and the conditions that triggered it
 - Initial observations and the investigation process
+- Possible query (KQL) that can be used to investigate potential compromise.
 - Root cause (where identified)
 - Resolution steps taken
 - Preventative measures or follow-up actions
