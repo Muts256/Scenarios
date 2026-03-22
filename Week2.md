@@ -46,7 +46,7 @@ Determine how the `regsvr32` execution of `nbjlop.dll` was performed under the *
 - `wmiprvse.exe` → WMI execution
 - `powershell.exe` / `cmd.exe` → Script-based execution
 
-*Red Flags:*
+*Potential Red Flags:*
 - Unusual or unknown parent process
 - Script interpreter spawning SYSTEM-level process
 
@@ -56,7 +56,7 @@ Determine how the `regsvr32` execution of `nbjlop.dll` was performed under the *
       - Run as: SYSTEM
       - Task creation time (correlate with alert)
     
-Possible query to use
+*Possible query to use*
 ```
 DeviceProcessEvents
 | where DeviceName == "conf-west02.internal.local"
@@ -73,7 +73,8 @@ DeviceProcessEvents
 - Check for:
   - New or modified services running as SYSTEM
   - Services pointing to suspicious binaries or scripts
- Possible Query to use
+
+*Possible Query to use*
 ````
 DeviceProcessEvents
 | where FileName =~ "sc.exe"
@@ -92,7 +93,7 @@ DeviceProcessEvents
  - Runs as SYSTEM by Design. WMI service (wmiprvse.exe) runs with high privileges
  - Stealth (LOLBIN Technique)
 
-Possible Query
+*Possible Query*
 ````
 DeviceProcessEvents
 | where FileName =~ "wmiprvse.exe"
@@ -105,7 +106,7 @@ DeviceProcessEvents
   - 
 Lateral Movement Indicators
 
-Possible Query
+*Possible Query*
 ````
 DeviceNetworkEvents
 | where DeviceName == "conf-west02.internal.local"
@@ -126,7 +127,7 @@ What to look for:
   - Account gaining elevated privileges before execution
   - Token impersonation or duplication patterns
 
-Possible Query
+*Possible Query*
 ````
 SecurityEvent
 | where EventID in (4672, 4688)
@@ -137,7 +138,8 @@ SecurityEvent
 ````
 
 #### 6. DLL Investigation
-Possible Query
+
+*Possible Query*
 
 ````
 DeviceFileEvents
@@ -150,7 +152,7 @@ Reason:
   - Verify digital signature
 
 #### 7. Timeline Correlation
-Possible Query
+*Possible Query*
 ````
 union DeviceProcessEvents, DeviceFileEvents, DeviceNetworkEvents
 | where DeviceName == "conf-west02.internal.local"
@@ -165,17 +167,19 @@ Reconstruct:
   - Privilege escalation
   - SYSTEM execution
 
-#### MITRE ATT&CK Mapping
-  - T1218.010 – Signed Binary Proxy Execution: regsvr32
-  - T1068 – Exploitation for Privilege Escalation
-  - T1055 – Process Injection (potential)
-
 #### Immediate Actions (if malicious)
   - Isolate device via MDE
   - Run live response investigation
   - Remove persistence (tasks/services)
   - Reset credentials
   - Hunt for similar activity across the environment
+
+#### MITRE ATT&CK Mapping
+  - T1218.010 – Signed Binary Proxy Execution: regsvr32
+  - T1068 – Exploitation for Privilege Escalation
+  - T1055 – Process Injection (potential)
+
+
 
 Lessons Learned
 
