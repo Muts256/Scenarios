@@ -15,6 +15,9 @@
 
 ---
 
+Question: What would you check to confirm if the sign-in was adversary activity (account compromise) or a false positive?
+---
+
 #### Investigation: Impossible Travel (Compromise vs False Positive)
 
 Within a 15-minute window, the user account George.Matthews signed into Microsoft 365 from two geographically distant locations that are not physically possible to travel between. Conditional Access flagged the session, but authentication was still successful.
