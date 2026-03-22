@@ -176,6 +176,9 @@ Deviates from normal admin behavior
 - **T1021** – Remote Services (potential lateral movement)
 
 
+---
+
+
 #### Lessons Learned
 This scenario highlights that effective detection relies on:
 - Understanding **dual-use tools**
