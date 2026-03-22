@@ -1,21 +1,21 @@
-##  Alert: MYDFIR-ALRT-0002
+####  Alert: MYDFIR-ALRT-0002
 
-###  Alert Name
+####  Alert Name
 **Internal Port Scan Detected**
 
-###  Date / Time
+####  Date / Time
 `2025-08-20 06:18:35 UTC`
 
-###  Affected Device
+####  Affected Device
 `Vuln-srv.internal.local`
 
-###  User Account
+####  User Account
 `administrator`
 
-### File Detected
+#### File Detected
 `netscan.exe`
 
-### Network Target
+#### Network Target
 `192.168.1.0/24`
 
 #### Summary
