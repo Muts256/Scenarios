@@ -1,7 +1,7 @@
 #### Alert: MYDFIR-ALRT-0000
 
 #### Alert Name
-*Unauthorized Remote Tool Installation*
+*Unauthorised Remote Tool Installation*
 
 ####  Affected Device
 `app-east01.internal.local`
