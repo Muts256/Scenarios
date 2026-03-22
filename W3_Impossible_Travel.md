@@ -82,3 +82,12 @@ The authentication was **not blocked**, meaning a potentially unauthorized user 
 - **T1078** – Valid Accounts
 - **T1556** – Modify Authentication Process (potential)
 - **T1539** – Steal Web Session Cookie (potential)
+
+
+---
+
+#### Lessons Learned
+This exercise highlights that effective identity security depends on:
+- Strong **Conditional Access enforcement**
+- Correlation of **identity, device, and network signals**
+- Continuous monitoring of **post-authentication activity**
