@@ -4,7 +4,7 @@
 
 This repository serves as a personal knowledge base for documenting real-world alert scenarios and the step-by-step approaches used to investigate, triage, and resolve them.
 
-Whether you're dealing with a spiking error rate, a misfiring monitor, or a full-blown production incident, the goal of this repo is simple: **capture what happened, what was checked, and what fixed it** — so the next time a similar alert fires, the path forward is already mapped out.
+Spiking error rate, a misfiring monitor, or a full-blown production incident, the goal of this repo is simple: **capture what happened, what was checked, and what fixed it**  so the next time a similar alert fires, the path forward is already mapped out.
 
 ### Purpose
 
