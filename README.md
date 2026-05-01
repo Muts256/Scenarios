@@ -15,7 +15,7 @@ Spiking error rate, a misfiring monitor, or a full-blown production incident, th
 
 ### What's inside
 
-Each scenario is documented as its own file or folder, covering:
+Each alert scenario is documented as its own file or folder, covering:
 
 - The alert that fired and the conditions that triggered it
 - Initial observations and the investigation process
