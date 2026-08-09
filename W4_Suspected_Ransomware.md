@@ -40,6 +40,10 @@ The decision to isolate the server is based on **three correlated indicators occ
 
    * Sustained CPU usage at this level is consistent with an intensive encryption, compression, or file-transformation process.
 
+#### Escalate
+
+With strong evidence of potentially destructive malicious activity on a critical file server. At this point, notify the response team and SOC lead
+
 #### Contextual Consideration
 
 The scheduled archiving rollout is relevant context and should be investigated. However, it should **not override the security telemetry**.
