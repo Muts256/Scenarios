@@ -42,7 +42,9 @@ The decision to isolate the server is based on **three correlated indicators occ
 
 #### Escalate
 
-With strong evidence of potentially destructive malicious activity on a critical file server. At this point, notify the response team and SOC lead
+With strong evidence of potentially destructive malicious activity on a critical file server. At this point, notify the response team and SOC lead.
+
+Since Finance opens in five hours, management needs to know that there is a potential impact to critical business services before 08:00.
 
 #### Contextual Consideration
 
