@@ -12,6 +12,8 @@ You've never seen the .lkd extension before. A quick search brings up nothing so
 Before you do anything, you remember the email IT sent yesterday. They're rolling out a new archiving tool across the file servers this week, "expect elevated disk activity during off-peak hours." The rollout schedule attached shows this server listed for tonight.
 Your isolation button disconnects the server from the network instantly. Finance opens in 5 hours, and that server holds their shared drives. Isolating it wrongly means a morning of downtime, an angry client, and an incident report with your name on it.
 
+---
+
 #### Explain how you would investigate and why?
 
 Isolate the server now, then investigate.
@@ -50,6 +52,7 @@ provides sufficient evidence to treat the activity as a potential ransomware inc
 
 Given that the server holds Finance share folders, the appropriate approach is to **isolate first, then investigate**, while simultaneously verifying whether the observed activity is associated with the authorised archiving deployment. Contact the change management team and the administrators to confirm that this behaviour is expected.
 
+---
 
 #### MITRE ATT&CK Mapping
 
