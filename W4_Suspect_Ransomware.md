@@ -49,3 +49,13 @@ The combination of:
 provides sufficient evidence to treat the activity as a potential ransomware incident and **contain the host immediately**.
 
 The appropriate approach is to **isolate first, then investigate**, while simultaneously verifying whether the observed activity is associated with the authorised archiving deployment.
+
+
+#### MITRE ATT&CK Mapping
+
+| Evidence | Technique | ATT&CK ID | Rationale |
+|---|---|---|---|
+| `vssadmin.exe delete shadows /all /quiet` | Inhibit System Recovery | [T1490](https://attack.mitre.org/techniques/T1490/) | Deletes Volume Shadow Copies to prevent recovery. |
+| 4,000+ files renamed within two minutes | Data Encrypted for Impact | [T1486](https://attack.mitre.org/techniques/T1486/) | Mass file modification is consistent with ransomware encryption. |
+| Files receiving an unknown `.lkd` extension | Data Encrypted for Impact | [T1486](https://attack.mitre.org/techniques/T1486/) | A new extension across thousands of files may indicate encrypted or transformed data. |
+| CPU utilization reaching 98% | Supporting evidence for T1486 | [T1486](https://attack.mitre.org/techniques/T1486/) | High CPU utilization may indicate an active encryption/transformation process, but CPU usage alone is not sufficient to establish the technique. |
