@@ -16,7 +16,7 @@ Your isolation button disconnects the server from the network instantly. Finance
 
 #### Explain how you would investigate and why?
 
-Isolate the server now, then investigate.
+Isolate the server immediately, then investigate.
 
 The rapid change of the file extension is very suspicious. This is a high-confidence ransomware-style attack pattern, despite the legitimate archiving rollout.
 
