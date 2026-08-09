@@ -48,7 +48,7 @@ The combination of:
 
 provides sufficient evidence to treat the activity as a potential ransomware incident and **contain the host immediately**.
 
-The appropriate approach is to **isolate first, then investigate**, while simultaneously verifying whether the observed activity is associated with the authorised archiving deployment.
+Given that the server holds Finance share folders, the appropriate approach is to **isolate first, then investigate**, while simultaneously verifying whether the observed activity is associated with the authorised archiving deployment. Contact the change management team and the administrators to confirm that this behaviour is expected.
 
 
 #### MITRE ATT&CK Mapping
